@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="folha.css">
+    <title>Carrocel</title>
+</head>
+<body>
+    <header class="nav">
+        
+        <div class="menu">
+            <div class="logo">logo</div>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </div>
+    </header>
+    <!--slides-->
+    <section class="slider">
+        <div class="slider-content">
+            <!--Seleção das imagens(radios)-->
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <!--Imagens-->
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="img/praia.jpg"alt="slide 1">
+                <img class="img-mobile" src="img/mobile/paisagem1.jpg" alt="slide 1">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="img/img2.jpg"alt="slide 2">
+                <img class="img-mobile" src="img/mobile/paisagem2.jpg" alt="slide 2">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="img/neve.jpg"alt="slide 3">
+                <img class="img-mobile" src="img/mobile/paisagem3.jpg" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <!--label que faz referencia aos radios-->
+            <div class="nav-manual">
+                 <label for="radio1" class="manual-btn"></label>
+                 <label for="radio2" class="manual-btn"></label>
+                 <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+    
+    <section class="detalhes">
+        <div class="detalhes-img">
+            <h1>Home</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati nobis, quam id officiis expedita exercitationem quis rerum quos qui nulla voluptas! Quod minus corporis blanditiis. Vel sunt expedita dolore!</p>
+        </div>
+    </section>
+
+    <script src="Aula3.js"></script>
+</body>
+</html>

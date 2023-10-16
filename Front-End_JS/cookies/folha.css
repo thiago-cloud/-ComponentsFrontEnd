@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ccc;
+    height: 1900px;
+}
+
+.cookies-msg{
+    width:80%;
+    background-color:#fff;
+    position:fixed;
+    bottom:5%;
+    left:50%;
+    transform: translate(-50%);/*coloca a mensagem no meio*/
+    border-radius: 15px;
+    
+}
+
+.excluir{
+    visibility: hidden;
+}
+
+.cookies-msg .cookies-txt{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: justify;
+    padding: 20px;
+    
+}
+
+.cookies-msg .cookies-txt p{
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.cookies-msg .cookies-txt .cookies-btn{
+    margin-left: 30px;
+
+}
+.cookies-msg .cookies-txt .cookies-btn button{
+    background-color: black;
+    color:#fff;
+    font-weight: 700;
+    font-size: 16pt;
+    padding: 10px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cookies-msg .cookies-txt .cookies-btn button:hover{
+    transform: scale(0.9);
+}
+
+
+

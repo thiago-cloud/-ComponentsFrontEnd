@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.menu{
+    width:100vw;
+    height:10vh;
+    background-color: #008b2f;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    
+}
+.menu .logo{
+    position:relative;
+   color: azure;
+   font-size: 16pt;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-right: 50%;
+   
+}
+.menu a{
+    font-size: 16pt;
+    font-family:Arial, Helvetica, sans-serif;
+    color:azure;
+    text-decoration: none;
+    margin: 20px;
+
+}
+/*Estilização da slide*/
+
+section.slider{
+    margin: 0 auto;
+    width:100%;
+    height:auto;
+    padding:0 !important;
+    overflow: hidden;/*esconde as imagens da horizontal*/
+
+}
+
+.slider-content{
+    width: 400%;
+    height:auto;
+    display:flex;/*coloca as imagem na horizontal*/
+}
+
+.slider-content input, .img-mobile{
+display: none;/*esconde o radio*/
+}
+
+.slide-box{
+    width:25%;
+    height:auto;
+    position:relative;
+    text-align: center;
+    transition:1s;/*move de um slide para outro em um segundo*/
+}
+
+.slide-box img{
+    width:100%;
+    height:85vh;
+}
+
+.nav-manual, .nav-auto {
+    position:absolute;
+    width:100%;
+    margin-top:42%;/*posiciona a seleção do radio*/
+    display: flex;
+    justify-content: center;
+
+}
+/*Estilização das bolinhas(radio)*/
+.nav-manual .manual-btn, .nav-auto div{
+    border:1px solid #22b151;
+    padding:10px;
+    border-radius:50%;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+/*Separação das bolinhas(radio) menos a ultima*/
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right:10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color:#22b151;
+}
+
+/*verifica sempre que o radio estiver marcado mudar a cor da bolinha*/
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #22b151;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #22b151;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #22b151;
+}
+
+/*Configuração para mecher as imagens dos slide*/
+
+#radio1:checked ~ .primeiro{
+    margin-left:0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left:-25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left:-50%;
+}
+
+/*Estilização detalhes*/
+
+.detalhes-img{
+    margin-top:80px;
+}
+
+.detalhes-img h1{
+    font-size: 18pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.detalhes-img p{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+/*Estilização mobile*/
+@media screen and (max-width:900px){
+    .img-desktop{
+        display:none;
+    }
+    .img-mobile{
+        display:block;
+    }
+    .nav-auto, .nav-manual{
+        margin-top:105%;
+    }
+
+
+
+}

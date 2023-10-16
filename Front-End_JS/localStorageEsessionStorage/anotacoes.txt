@@ -1,0 +1,22 @@
+LocalStorage
+
+Recurso para salvar dados no navegador, que persiste após o recarregamento da página ou ao fechar a aba
+
+Capacidade maxima de 10mb
+
+Os dados são salvos no computador do usuario
+
+Estes dados não possuem tempo de expiração mas podem ser removidos
+
+Os dados ficam na aba application do Devtools
+
+
+SessionStorage
+
+Recurso similar ao LocalStorage
+
+Capacidade maxima de 5mb
+
+Os dados são salvos no computador do usuario
+
+Os dados expiram quando a aba e fechada

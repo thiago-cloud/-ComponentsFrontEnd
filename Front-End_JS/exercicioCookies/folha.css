@@ -1,0 +1,70 @@
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+    height:1900px;
+       
+}
+
+.cookies-msg{
+    width: 80%;
+    transform: translate(-50%);
+    position: fixed;
+    left:50%;
+    bottom:5%;
+    visibility: visible;
+    
+    
+}
+.esconder{
+    visibility: hidden;
+}
+
+
+.cookies-msg .cookies-txt{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    width: 70vw;
+    height: 15vh;
+    padding:90px 30px;
+    
+    
+}
+
+.cookies-msg .cookies-txt p{
+    font-size: 16pt;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cookies-msg .cookies-txt button{
+    font-size: 18pt;
+    padding: 10px 30px;
+    color:azure;
+    background-color: black;
+    border:2px solid black;
+    border-radius: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cookies-msg .cookies-txt button:hover{
+    transform: scale(0.8);
+}
+

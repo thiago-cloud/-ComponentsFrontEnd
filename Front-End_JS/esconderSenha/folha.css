@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: tomato;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    position: relative;
+}
+
+input{
+    border:0;
+    width: 250px;
+    line-height:40px;
+    font-size: 16pt;
+    outline: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div i{
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 5%;/*Faz com que olho entre dentro do input*/
+    color:#999594d7;
+    top: 8%;
+}
