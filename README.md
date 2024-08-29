@@ -19,6 +19,6 @@ Bem-vindo ao repositório de Componentes Web! Este repositório contém uma cole
 - **assets:** recursos adicionais como imagens e fontes.
 
 ## Execução do componente
-1. Crie uma pasta com 3 arquivos de JavaScript, HTML e CSS.
-2. instale uma extensão chamada Live Server se for utilizar no VS Code.
-3. Em seguida vá no arquivo HTML, pressione no botão direito do mouse e vá na opção live server para executar o componente no Navegador.
+1. Crie uma pasta para inserir o git clone
+2. Instale uma extensão chamada Live Server se for utilizar no VS Code.
+3. Em seguida vá no arquivo HTML de uma das pastas com o componente, pressione no botão direito do mouse e vá na opção live server para executar o componente no Navegador.
